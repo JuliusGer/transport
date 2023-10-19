@@ -1,0 +1,78 @@
+{% extends 'main/main_template.html'%}
+
+{% block title %}transport form{% endblock %}
+
+{% block content %}
+    <span>{{ updating_id_mes }}</span>
+    <form action="" method="POST" name="form">
+        {% csrf_token %}
+                    <div id="split_left" class="split left">
+                        <div class="centered">
+                    <h3>Данные владельца:</h3>
+                    <fieldset>
+                        {{ form_owner }}
+
+                        <span>{{ error }}</span>
+<!--            <label for="owner_name">ФИО:</label><br/>&ndash;&gt;-->
+<!--                        <input type="text" name="owner_name" size="30"><br/>-->
+
+<!--                        <label for="owner_gender">Пол:</label>-->
+<!--                        <div class="radio_class">-->
+<!--                        <input type="radio" value="man" name="owner_gender" />мужской-->
+<!--                        <input type="radio" value="woman" name="owner_gender"/>женский<br/>-->
+<!--                        </div><br/>-->
+
+<!--                        <label for="owner_citizenship">Гражданство:</label><br/>-->
+<!--                        <input name="owner_citizenship" type="text" value="" size="30"><br/>-->
+
+<!--                        <label for="owner_passport">Серия и номер паспорта:</label><br/>-->
+<!--                        <input type="text" name="owner_passport" size="30"><br/>-->
+
+<!--                        <label for="owner_birth_date">Дата рождения: </label>-->
+<!--                        <input type="date" name="owner_birth_date" value=""/><br/>-->
+
+                        </fieldset>
+                        <br/>
+                </div></div>
+                    <div id="split_right" class="split right">
+                        <div class="centered">
+                    <h3>Информация о транспортном средстве:</h3>
+                    <fieldset>
+                        {{ form_transport }}
+<!--                        <label for="transport_type_id">Тип транспорта:</label><br/>-->
+<!--                        <select name="transport_type_id">-->
+<!--                            <option value="3">Легковой автомобиль</option>-->
+<!--                            <option value="0">Самолет</option>-->
+<!--                            <option value="1">Поезд</option>-->
+<!--                            <option value="2">Автобус</option>-->
+<!--                            <option value="4">Водный транспорт</option>-->
+<!--                            <option value="5">Вертолет</option>-->
+<!--                        </select><br/>-->
+
+<!--                        <label for="transport_number">Номер:</label><br/>-->
+<!--                        <input type="text" name="transport_number" size="30"><br/>-->
+
+<!--                        <label for="prev_owner_id">ФИО предыдущего владельца:</label><br/>-->
+<!--                        <input type="text" name="prev_owner_id" size="30"><br/>-->
+
+<!--                        <label for="transport_manufacture_date">Дата изготовления:</label><br/>-->
+<!--                        <input type="text" name="transport_manufacture_date" size="30"><br/>-->
+
+<!--                        <label for="transport_license_expires">Водительские права владельца истекают:</label>-->
+<!--                        <input type="date" name="transport_license_expires" value=""/><br/>-->
+
+<!--                        <label for="transport_country">Страна производства:</label><br/>-->
+<!--                        <input name="transport_country" type="text" value="" size="30"><br/>-->
+                        </fieldset>
+                        <br/>
+                            </div></div>
+        <div>
+                          <div class="centered">
+                    <fieldset>
+                    <input id="submit" type="submit" value="send data"><br/>
+                    </fieldset></div></div>
+                </form>
+                </div>
+               </div>
+            </div>
+{% endblock %}

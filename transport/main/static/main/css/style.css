@@ -1,0 +1,185 @@
+
+
+#modal-container {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0,0,0,0.5);
+ display: none;
+ justify-content: center;
+ align-items: center;
+ z-index: 2;
+}
+
+#modal-header #close-modal-btn {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+
+#modal-body {
+ background-color: #fff;
+ padding: 10px;
+ border-radius: 0 0 5px 5px;
+}
+
+#modal-body label {
+ display: block;
+ margin-bottom: 5px;
+}
+
+#modal-body input[type="file"] {
+ margin-bottom: 10px;
+}
+
+#modal-footer {
+ background-color: #fff;
+ padding: 10px;
+ border-radius: 0 0 5px 5px;
+ text-align: center;
+ font-size: 14px;
+ color: #666;
+}
+
+
+#close-modal-btn:hover {
+ color: #f00;
+}
+
+
+.site-header {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header a {
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 1px;
+}
+
+.radio_class{
+    color: solid black;
+    font-size: 1.2em;
+}
+
+.table {
+	width: 100%;
+	margin-bottom: 20px;
+	border: 5px solid #fff;
+	border-top: 5px solid #fff;
+	border-bottom: 3px solid #fff;
+	border-collapse: collapse;
+	outline: 3px solid #ffd300;
+	font-size: 15px;
+	background: #fff;
+}
+
+input[type="submit"]{
+  display:inline-block;
+  width:100px;
+  height:100px;
+  background:#333;
+  color:#fff;
+  border:0 none;
+  border-radius:50%;
+  border-style: solid;
+  border-width: medium;
+  border-color: #FFFFFF;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #fff,
+      0 0 102px #fff,
+      0 0 151px #fff;
+}
+
+.split {
+  height: 90%;
+  width: 50%;
+  position: fixed;
+  overflow-x: hidden;
+  padding-top: 20px;
+  bottom: 0;
+}
+
+.right {
+  right: 0;
+  background-image: url("../img/тачка_холли.gif");
+  opacity: 0.83;
+}
+
+.left {
+  left: 0;
+  background-image: url("../img/владелец.jpg");
+  background-size: cover;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+label {
+    opacity: 1;
+    cursor: pointer;
+    color: black;
+    display: block;
+    margin: 1px;
+    color: solid black;
+    font-size:14px;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #fff,
+      0 0 102px #fff,
+      0 0 151px #fff;
+}
+
+input[type=text] {
+    background-color: white;
+    border: 4px solid DarkSlateGrey;
+    border-radius: 4px;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 5em;
+    font-stretch: expanded;
+    letter-spacing: 3px;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    color: black;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #fff,
+      0 0 102px #fff,
+      0 0 151px #fff;
+}

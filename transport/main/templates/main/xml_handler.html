@@ -1,0 +1,14 @@
+{% extends 'main/main_template.html'%}
+
+{% block title %}download tables as xml{% endblock %}
+
+{% block content %}
+  <div class="centered">
+    <h3>Скачать таблицы в формате XML:</h3>
+      <fieldset>
+            <a href='/static/xmls/transport_types.xml' download>Скачать таблицу transport_type.xml</a><br>
+            <a href="/static/xmls/transport_owners_info.xml" download>Скачать таблицу transport_owners.xml</a><br>
+            <a href="/static/xmls/transport_info.xml" download>Скачать таблицу transport.xml</a><br>
+       </fieldset>
+  </div>
+{% endblock %}
